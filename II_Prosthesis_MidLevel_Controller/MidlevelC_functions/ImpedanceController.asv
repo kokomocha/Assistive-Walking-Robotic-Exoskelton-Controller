@@ -1,0 +1,18 @@
+function torque = ImpedanceController(impedance_params, gait_state, angle, velocity)
+    % Uses gait state and the impedance params to determine the actuator
+    % torque.
+
+    arguments
+        impedance_params (1,12) double
+        gait_state (:,1) double
+        angle (:,1) double
+        velocity (:,1) double
+    end
+
+    % your code here
+    impedance_params=reshape(impedance_params,4,3);
+    for i=1:size(gait_state,1)   
+        torque= impedance_params(:,1)(impdence )
+    end
+    
+end 
