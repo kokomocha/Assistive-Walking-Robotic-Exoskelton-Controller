@@ -10,11 +10,11 @@
 <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
     <figure style="text-align: center;">
         <img height="350" src="assets/Ankle_Exoskeleton.png" alt="Ankle Exoskeleton" title="Ankle Exoskeleton" style="margin-right: 10px;" />
-        <figcaption>Ankle Exoskeleton</figcaption>
+<!--         <figcaption>Ankle Exoskeleton</figcaption> -->
     </figure>
     <figure style="text-align: center;">
         <img height="250" src="assets/Foot_forces.png" alt="Foot forces" title="Foot forces" />
-        <figcaption>Foot Forces Diagram</figcaption>
+<!--         <figcaption>Foot Forces Diagram</figcaption> -->
     </figure>
 </div>
 
@@ -46,12 +46,12 @@ This sub-module contains functions that preprocess the raw sensor data using fil
 
 <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
     <figure style="text-align: center;">
-        <img height="350" src="assets/Filtered_JointVelocities.png" alt="Filtered Joint Velocities" title="Filtered Joint Velocities Plot" style="margin-right: 10px;" />
-        <figcaption>Filtered Joint Velocities Plot</figcaption>
+        <img height="250" src="assets/Filtered_JointVelocities.png" alt="Filtered Joint Velocities" title="Filtered Joint Velocities Plot" style="margin-right: 10px;" />
+<!--         <figcaption>Filtered Joint Velocities Plot</figcaption> -->
     </figure>
     <figure style="text-align: center;">
-        <img height="350" src="assets/Stride_Torques.png" alt="Stride_Torques" title="Stride_Torques" />
-        <figcaption>Stride Torques</figcaption>
+        <img height="250" src="assets/Stride_Torques.png" alt="Stride_Torques" title="Stride_Torques" />
+<!--         <figcaption>Stride Torques</figcaption> -->
     </figure>
 </div>
 Additionally, we also process the data on Ground forces and plot the mean Ankle biological power. We model the motion of ankle as cyclic and analogous to a Biological spring to under stand the power dynamics. Subsequently, it helps us track the changes in plots during slow, medium and fast strides. [Right Plot Above]
@@ -64,12 +64,12 @@ Prosthesis Gait and Incline Classifier Control optimizes the functionality of pr
 This sub-module contains Control Logic for Mid-level Logic for Foot State-wise Segmentation (Early Stance, Late Stance, Early Swing, Late Swing) depicting whether the foot is in contact with ground or not. [Left Plot Below]
 <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
     <figure style="text-align: center;">
-        <img height="500" src="assets/Plot_KneeAnklePhase.png" alt="Phase-Aligned Trajectory Plots" title="Phase-Aligned Trajectory Plots" style="margin-right: 10px;" />
-        <figcaption>Phase-Aligned Trajectory Plots</figcaption>
+        <img height="450" src="assets/Plot_KneeAnklePhase.png" alt="Phase-Aligned Trajectory Plots" title="Phase-Aligned Trajectory Plots" style="margin-right: 10px;" />
+<!--         <figcaption>Phase-Aligned Trajectory Plots</figcaption> -->
     </figure>
     <figure style="text-align: center;">
-        <img height="350" src="assets/Torques_BiovsProsthetic.png" alt="Biological v/s Prosthetic Torque Plot" title="Biological v/s Prosthetic Torque Plot" />
-        <figcaption>Biological v/s Prosthetic Torque Plot</figcaption>
+        <img height="300" src="assets/Torques_BiovsProsthetic.png" alt="Biological v/s Prosthetic Torque Plot" title="Biological v/s Prosthetic Torque Plot" />
+<!--         <figcaption>Biological v/s Prosthetic Torque Plot</figcaption> -->
     </figure>
 </div>
 
@@ -86,12 +86,12 @@ We achieve a significantly low RMSE of 2.177 Nm after scaling down the power at 
 
 <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
     <figure style="text-align: center;">
-        <img height="300" src="assets/Modeling_CyclicGaitMotion.png" alt="Modeling Cyclic Gait Motion" title="Modeling Cyclic Gait Motion" style="margin-right: 10px;" />
-        <figcaption>Modeling Cyclic Gait Motion</figcaption>
+        <img height="200" src="assets/Modeling_CyclicGaitMotion.png" alt="Modeling Cyclic Gait Motion" title="Modeling Cyclic Gait Motion" style="margin-right: 10px;" />
+<!--         <figcaption>Modeling Cyclic Gait Motion</figcaption> -->
     </figure>
     <figure style="text-align: center;">
-        <img height="350" src="assets/ExoTorque_25percent.png" alt="ExoTorque Attenuated" title="ExoTorque Attenuated" />
-        <figcaption>ExoTorque Attenuated</figcaption>
+        <img height="250" src="assets/ExoTorque_25percent.png" alt="ExoTorque Attenuated" title="ExoTorque Attenuated" />
+<!--         <figcaption>ExoTorque Attenuated</figcaption> -->
     </figure>
 </div>
 
