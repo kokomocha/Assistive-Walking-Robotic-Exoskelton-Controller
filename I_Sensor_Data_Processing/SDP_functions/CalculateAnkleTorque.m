@@ -8,5 +8,8 @@ function ankle_torque = CalculateAnkleTorque(Fy, Fz, L, H)
     end
 
     % Put your code here
+    %Conventions: Dorsiflexion Torque positive
+    %
+    ankle_torque=(Fz.*L)-(Fy.*H);
 
 end

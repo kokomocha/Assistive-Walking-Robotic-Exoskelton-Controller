@@ -1,5 +1,5 @@
 function [feature_matrix, labels] = GetFeatures(indices, window_size, D_all, signals)
-    % Creates a feature matrix with mean, min, max from a window of data,
+    % Creates a feature matrix with mean, max, min from a window of data,
     % from whichever signal names are passed.
     % tip: taking the mean/max/min of an n x m matrix is a 1 x m vector 
     arguments
@@ -9,15 +9,15 @@ function [feature_matrix, labels] = GetFeatures(indices, window_size, D_all, sig
         signals string
     end
 
-    feature_matrix = [];
-    labels = [];
+    feature_matrix = zeros(length(indices),9);
 
     % your code here
     for i = 1:length(indices)
-        current_idx = indices(i);
-        IMU_data(end+1, :) = D_all.R_Accel(current_idx,:);
-        labels(end+1, :) = D_all.RampAngle(current_idx);
-    end
-
+        dummy1 = table2array(mean(D_all((indices(:,i)-window_size):indices(:,i),signals(:,1))));
+        dummy2 = table2array(max(D_all((indices(:,i)-window_size):indices(:,i),signals(:,1))));
+        dummy3 = table2array(min(D_all((indices(:,i)-window_size):indices(:,i),signals(:,1))));
+        feature_matrix(i,:)=[dummy1,dummy2,dummy3];
+    end  
+    labels = table2array(D_all(indices, signals(:,2)));
 
     end

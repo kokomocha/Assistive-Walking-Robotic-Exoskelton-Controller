@@ -11,5 +11,13 @@ function velocity = CalculateJointVelocity(angle, fs, do_filter)
     end
 
     % Put your code here
+    a=angle*pi/180;
+    aa=diff(a); 
+
+    while do_filter 
+        [b,a] = butter(4, (fs/2)/fs, 'low');
+        velocity= filtfilt(b, a, aa);
+        do_filter = false;
+    end
 
 end
